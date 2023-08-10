@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+
+    <title>AUTO ESSENTIAL || Asaworldconnect</title>
+  </head>
+
+  <body>
+    <div class="navbar-1">
+      <div class="main-nav flex">
+        <div></div>
+        <div></div>
+        <ul class="nav-list flex">
+          <li><a href="index.html">Home</a></li>
+          <li>Shop</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Tools</li>
+        </ul>
+        <ul class="nav-search flex">
+          <li><i class="bi bi-person-plus"></i></li>
+          <li><i class="bi bi-search"></i></li>
+          <li><i class="bi bi-heart"></i></li>
+          <li><i class="bi bi-cart4"></i></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrap-logo">
+      <div class="img-logo">
+        <img src="./Images/logo.png" alt="logo" />
+      </div>
+      <h2>Checkout</h2>
+      <p class="center home-text">
+        <a href="index.html">Home </a>
+        <span><i class="bi bi-chevron-right arrow"></i></span>
+        <span>Checkout</span>
+      </p>
+    </div>
+
+    <section class="checkout-ml">
+      <form action="Get" class="form-control">
+        <h3>Billing details</h3>
+
+        <div class="wrap-checkout">
+          <p>
+            <label for="firt_name">First Name</label>
+            <input type="text" name="" class="first-name" required />
+          </p>
+          <p>
+            <label for="Last_name">Last Name</label>
+            <input type="text" name="" class="first-name" required />
+          </p>
+        </div>
+
+        <p>
+          <label for="">Company Name (Optional)</label>
+          <input type="text" name="" class="input-checkout" />
+        </p>
+
+        <p>
+          <label for="country">Country / Region</label>
+          <select name="" id="">
+            <option value=""></option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="congo">Congo</option>
+            <option value="Ibadan">Ibadan</option>
+            <option value="Oyo">Oyo</option>
+            <option value="Benue">Benue</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="addrss">Street address</label>
+          <input type="text" name="address" class="input-checkout" />
+        </p>
+
+        <p>
+          <label for="city">Town / City</label>
+          <input type="text" name="city" class="input-checkout" />
+        </p>
+
+        <p>
+          <label for="province">Province</label>
+          <select name="" id="">
+            <option value=""></option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="congo">Congo</option>
+            <option value="Ibadan">Ibadan</option>
+            <option value="Oyo">Oyo</option>
+            <option value="Benue">Benue</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="number">ZIP code</label>
+          <input type="number" name="number" class="input-checkout" />
+        </p>
+
+        <p>
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" class="input-checkout" />
+        </p>
+
+        <p>
+          <label for="email">Email address</label>
+          <input type="email" name="email" class="input-checkout" />
+        </p>
+
+        <input
+          type="text"
+          name=""
+          class="extra"
+          placeholder="Additional information"
+        />
+      </form>
+
+      <div class="checkout-detail">
+        <div class="wrap-wrap">
+          <p>Product</p>
+          <p>Subtotal</p>
+        </div>
+
+        <div class="wrap-wrap">
+          <p>MIRAGE MR-AT172 285/65</p>
+          <p>Rs. 50,000.00</p>
+        </div>
+
+        <div class="wrap-wrap">
+          <p>Subtotal</p>
+          <p>Rs. 50,000.00</p>
+        </div>
+
+        <div class="wrap-wrap">
+          <p>Total</p>
+          <p>Rs. 50,000.00</p>
+        </div>
+
+        <div class="bottom-line"></div>
+
+        <p class="">
+          <input type="radio" name="" id="" />
+          <label for="">Direct Bank Transfer</label>
+        </p>
+
+        <p>
+          Make your payment directly into our bank account. Please use your
+          Order ID as the payment reference. Your order will not be shipped
+          until the funds have cleared in our account.
+        </p>
+
+        <p class="">
+          <input type="radio" name="" id="" />
+          <label for="">Direct Bank Transfer</label>
+        </p>
+
+        <p class="">
+          <input type="radio" name="" id="" />
+          <label for="">Direct Bank Transfer</label>
+        </p>
+
+        <p>
+          Your personal data will be used to support your experience throughout
+          this website, to manage access to your account, and for other purposes
+          described in our privacy policy.
+        </p>
+
+        <button>Place Order</button>
+      </div>
+    </section>
+  </body>
+</html>
