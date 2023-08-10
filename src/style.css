@@ -19,6 +19,7 @@
 a {
   position: relative;
   text-decoration: none;
+  color: inherit;
 }
 
 a::after {
@@ -35,7 +36,7 @@ a::after {
 }
 
 a:hover::after {
-  transform: scaleX(1);
+  transform: scaleX(0);
 }
 
 a + a::before {
@@ -185,6 +186,10 @@ a + a::before {
   line-height: 20px;
   text-align: justify;
   color: #000000;
+}
+
+.icon-size {
+  font-size: 28px;
 }
 
 .sm-text {
@@ -452,7 +457,7 @@ ul {
   line-height: 24px;
   list-style: none;
   color: var(--text-color);
-  gap: 20px;
+  gap: 70px;
 }
 
 /**
@@ -477,6 +482,13 @@ h2 {
   font-size: 64px;
   line-height: 70px;
   text-align: center;
+}
+
+.hero-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .all {
@@ -589,10 +601,9 @@ hr {
 }
 
 .followBtn {
-  padding: 5px 80px;
+  padding: 5px 50px;
   border-radius: 50px;
-  box-shadow: 0px 10px 10px 0px #4e4b4b;
-  border: 1px solid #fff;
+  border: 1px solid #faf4f4;
   background-color: #faf4f4;
 }
 
