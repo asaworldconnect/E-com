@@ -1,24 +1,12 @@
 var fullImg = document.getElementById("imageBox");
 let cart = document.getElementsByClassName("addBtn");
-let product = document.getElementsById("productList");
+let shop = document.getElementById("shop");
 
 function myFunction(smallImg) {
   fullImg.src = smallImg.src;
 }
 
-// Get the element with the class you want to modify
-// const imgElement = document.querySelector("img");
-// const imgWrapper = document.getElementsByClassName("tire-container");
 
-// for (i = 0; i < cart.length; i++) {
-//   cart[i].addEventListener("click", () => {
-//     cartUpdate();
-//   });
-// }
-
-// function cartUpdate() {
-//   localStorage.setItem("cartUpdate", 1);
-// }
 
 let shopItemData = [
   {
@@ -134,23 +122,18 @@ let shopItemData = [
     img: "./Images/filter2.png",
   },
 ];
-
-let generateProduct = () => {
-  return (product.innerHTML = shopItemData
+let generateShop = () => {
+  return (shop.innerHTML = shopItemData
     .map((x) => {
       return `
-         <div class="wrap flex">
-    <div class="product-image">
-          <img src=${x.img} alt="" />
-          <p class="text">${x.name}</p>
-          <p class="text">${x.desc}</p>
-          <p class="text bold mb">${x.price}</p>
-          <a class="add-cart cart1" href="">Add Cart</a>
+        <div class="wrap flex">
+          <div class="product-image">
+            <img src="${x.img}" alt="" />
+            <p class="text">${x.name}</p>
+            <p class="text">${x.desc}</p>
+            <p class="text bold mb">${x.price}</p>
           </div>
-        </div>
-        
-
-    `;
+        </div>`;
     })
     .join(" "));
 };
