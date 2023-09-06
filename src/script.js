@@ -11,3 +11,6 @@ closeCartButton.addEventListener("click", () => {
   cartOverlay.style.display = "none";
   document.body.style.overflow = "auto"; // Restore scrolling when cart is closed
 });
+
+
+

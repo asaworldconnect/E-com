@@ -82,32 +82,17 @@ header {
   cursor: pointer;
 }
 
-.cart-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.cart-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-button#closeCart {
-  margin-top: 10px;
-}
-
-/* end sample */
-
 .padding-contact {
   padding: 54px 57px 269px 74px;
+  margin-right: 30px;
+}
+
+.form-control-contact {
+  padding: 124.5px 75px 64.5px 30px;
+}
+
+.contact-wrap {
+  margin: 85px 191px 5.5px;
 }
 
 .flex {
@@ -208,6 +193,10 @@ button#closeCart {
   margin-bottom: 66px;
 }
 
+.mb-0 {
+  margin-bottom: 22px;
+}
+
 .mb-1 {
   margin-bottom: 55px;
 }
@@ -250,9 +239,6 @@ button#closeCart {
 
 .margin-bottom {
   margin-bottom: 36px;
-}
-
-.margin-bottom-log {
 }
 
 main {
@@ -987,8 +973,15 @@ select > option {
   background-color: #fbebb5;
 }
 
+.color-pattern-delivery-2 {
+  background: #faf4f4;
+}
+
+.color-pattern-delivery-1 {
+  background: #d4d4d4;
+}
+
 .Delivery-detail {
-  background-color: var(--free-color);
   padding: 96px 100px;
 }
 
@@ -1113,6 +1106,34 @@ h4 {
   width: 100%;
   height: auto;
 }
+
+/*  style for sidebar review start here  */
+
+#sidebar {
+  background-color: #fff;
+  width: 516px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -350px; /* Hide the sidebar by default */
+  color: #fff;
+  transition: left 0.3s ease-in-out;
+}
+
+#main-content {
+  margin-left: 0; /* Adjust the margin to create space for the sidebar */
+  transition: margin-left 0.3s ease-in-out;
+}
+
+#sidebar.visible {
+  right: 0; /* Show the sidebar when it has the "visible" class */
+}
+
+#main-content.slide {
+  margin-right: 250px; /* Slide main content to the right when the sidebar is visible */
+}
+
+/* And ends here  */
 
 /* cart style are here */
 .cart-header,
@@ -1319,6 +1340,7 @@ h4 {
   line-height: normal;
   border-radius: 15px;
   border: 1px solid #000;
+  background-color: #fff9e5;
 }
 
 .check {
@@ -1353,9 +1375,16 @@ h4 {
   border: 1px solid #9f9f9f;
   background: #fff;
   flex-shrink: 0;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 
 .submitBtn {
+  width: 237px;
+  height: 48px;
+  flex-shrink: 0;
   border-radius: 15px;
   border: 1px solid #000;
   color: #000;
@@ -1364,10 +1393,127 @@ h4 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 
 .message-area {
   border-radius: 10px;
   border: 1px solid #9f9f9f;
   background: #fff;
+  padding: 26px;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
+
+.cart-total {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #fff9e5;
+  padding: 15px 75px 80px 85px;
+}
+
+.price-text-color-subtotal {
+  color: #9f9f9f;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 62px;
+}
+
+.price-text-color {
+  color: #b88e2f;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 58px;
+}
+
+/* Table style start here  */
+
+.product-table {
+  width: 817px;
+  height: 55px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.product-table td {
+  padding: 10px;
+}
+
+.product-table img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Style the header row */
+.product-table tr:first-child {
+  background: #fff9e5;
+  color: #000;
+  font-weight: bold;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.product-table-text-link-color {
+  color: #9f9f9f;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bg-1 {
+  width: 106px;
+  height: 106px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  display: flex;
+  align-items: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.table-section {
+  display: flex;
+  padding: 72px 100px 63px;
+  gap: 30px;
+}
+
+.table-quality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid #9f9f9f;
+}
+
+.product-text {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Table style end here */

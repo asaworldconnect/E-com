@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style></style>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Checkout Example</title>
+      </head>
+      <body>
+        <h1>Shopping Cart</h1>
+        <button id="checkoutButton">Checkout</button>
+        <div id="checkoutReview" style="display: none">
+          <h2>Review Your Order</h2>
+          <!-- Add review content here -->
+          <button id="confirmCheckout">Confirm Checkout</button>
+        </div>
+
+        <script>
+          // Get references to the checkout button and review div
+          const checkoutButton = document.getElementById("checkoutButton");
+          const checkoutReview = document.getElementById("checkoutReview");
+          const confirmCheckout = document.getElementById("confirmCheckout");
+
+          // Add a click event listener to the checkout button
+          checkoutButton.addEventListener("click", () => {
+            // Hide the checkout button
+            checkoutButton.style.display = "none";
+
+            // Show the review div
+            checkoutReview.style.display = "block";
+          });
+
+          // Add a click event listener to the confirm checkout button
+          confirmCheckout.addEventListener("click", () => {
+            // You can add code here to finalize the checkout process
+            alert("Checkout confirmed!"); // For demonstration purposes
+          });
+        </script>
+
+         <div class="container">
+      <header>
+        <h1>My Online Store</h1>
+        <div class="cart-icon" id="cartIcon">
+          <img src="cart-icon.png" alt="Cart Icon" />
+        </div>
+      </header>
+      <main>
+        <!-- Your main content goes here -->
+      </main>
+      <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-content">
+          <h2>Your Cart</h2>
+          <!-- Cart items will go here -->
+          <button id="closeCart">Close Cart</button>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+      </body>
+    </html>
+  </body>
+</html>

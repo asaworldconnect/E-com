@@ -6,8 +6,6 @@ function myFunction(smallImg) {
   fullImg.src = smallImg.src;
 }
 
-
-
 let shopItemData = [
   {
     id: 1,

@@ -21,7 +21,48 @@
   </head>
 
   <body>
-  
+    <div class="cart-container" id="sidebar">
+      <div class="cart-header">
+        <h3>Shopping Cart</h3>
+        <p><i class="bi bi-bag-x cart-icon"></i></p>
+      </div>
+
+      <div class="cart-line"></div>
+
+      <div class="wrap-cart">
+        <div class="bg">
+          <img src="./Images/Asgaard sofa 5.png" alt="tire" />
+        </div>
+
+        <div class="product-detail-cart">
+          <p>MIRAGE MR-AT172 285/65</p>
+          <div class="price-size-quantity">
+            <span class="cart-quantity-no">1</span>
+            <span class="cart-size">x</span>
+            <span class="cart-product-price">Rs. 250,000.00</span>
+          </div>
+        </div>
+        <i class="bi bi-x bg-color"></i>
+      </div>
+
+      <div class="cart-subtotal">
+        <p class="total-rice-text">Subtotal</p>
+        <p class="sub-total-price">Rs. 50,000.00</p>
+      </div>
+
+      <div class="footer-line"></div>
+
+      <div class="cart-btn">
+        <button class="btn1 outline">
+          <a href="cart-total.html">View Cart</a>
+        </button>
+        <button class="btn1 outline">
+          <a href="checkout.html">Checkout</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="container" id="main-content">
       <header>
         <div class="navbar-1">
           <div class="main-nav flex">
@@ -47,12 +88,15 @@
       </header>
 
       <div class="flex nav-nav-home">
-        <a href="index.html"><p class="align-text mr">
-          Home <span><i class="bi bi-chevron-right arrow"></i></span>
-        </p></a>
+        <a href="index.html"
+          ><p class="align-text mr">
+            Home <span><i class="bi bi-chevron-right arrow"></i></span></p
+        ></a>
 
         <p class="align-text">
-       <a href="shop.html">   Shop <span><i class="bi bi-chevron-right arrow"></i></span></a>
+          <a href="shop.html">
+            Shop <span><i class="bi bi-chevron-right arrow"></i></span
+          ></a>
         </p>
         <div class="line"></div>
         <p>Tire</p>
@@ -138,10 +182,12 @@
               <i class="bi bi-plus icon2"></i>
             </div>
 
-            <button class="addBtn">Add To Cart</button>
+            <button class="addBtn" id="toggle-sidebar" onclick="toggleButton()">
+              Add To Cart
+            </button>
           </div>
 
-           <div class="bottom-line-2"></div>
+          <div class="bottom-line-2"></div>
 
           <div class="">
             <div class="flex py">
@@ -171,7 +217,6 @@
                 <img src="./Images/twit.png" alt="" />
               </div>
             </div>
-           
           </div>
         </div>
       </section>
@@ -257,8 +302,29 @@
         <div class="bottom-line"></div>
         <p class="center">2023-24 Asaworldconnect, All Rights reserved</p>
       </footer>
-    </main>
+    </div>
 
-    <script src="./src/app.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get references to the sidebar and main-content elements
+        var sidebar = document.getElementById("sidebar");
+        var mainContent = document.getElementById("main-content");
+
+        // Get a reference to the button or element that triggers the sidebar toggle
+        var toggleButton = document.getElementById("toggle-sidebar");
+
+        // Add a click event listener to the toggle button
+        toggleButton.addEventListener("click", function () {
+          // Toggle the "visible" class on the sidebar element
+          if (sidebar.classList.contains("visible")) {
+            sidebar.classList.remove("visible");
+            mainContent.classList.remove("slide");
+          } else {
+            sidebar.classList.add("visible");
+            mainContent.classList.add("slide");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
