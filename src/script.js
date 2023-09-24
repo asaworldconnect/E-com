@@ -1,17 +1,3 @@
-const cartIcon = document.getElementById("cartIcon");
-const cartOverlay = document.getElementById("cartOverlay");
-const closeCartButton = document.getElementById("closeCart");
-
-cartIcon.addEventListener("click", () => {
-  cartOverlay.style.display = "flex";
-  document.body.style.overflow = "hidden"; // Prevent scrolling while cart is open
-});
-
-closeCartButton.addEventListener("click", () => {
-  cartOverlay.style.display = "none";
-  document.body.style.overflow = "auto"; // Restore scrolling when cart is closed
-});
-
 let increment = (id) => {
   let selectedItem = id;
   let search = basket.find((x) => x.id === selectedItem.id);
@@ -49,3 +35,30 @@ let update = (id) => {
   document.getElementById(id).innerHTML = search.item;
   calculation();
 };
+
+// overlay start here
+// script.js
+// Function to show the loader overlay
+function showLoader() {
+  document.getElementById("loader-overlay").style.display = "block";
+}
+
+// Function to hide the loader overlay
+function hideLoader() {
+  document.getElementById("loader-overlay").style.display = "none";
+}
+
+// Simulate an asynchronous task (e.g., setTimeout)
+function simulateAsyncTask() {
+  showLoader();
+
+  setTimeout(function () {
+    // Simulate task completion
+    hideLoader();
+  }, 3000); // Replace this with your actual asynchronous task
+}
+
+// Example usage: Call simulateAsyncTask when you want to show the loader
+simulateAsyncTask();
+
+// overlay ends here

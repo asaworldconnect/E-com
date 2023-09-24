@@ -60,6 +60,22 @@ a + a::before {
   color: #9f9f9f;
 }
 
+.gap-gap {
+  gap: 26px;
+}
+
+.form-control {
+  margin: 35px 79px 71px 75px;
+}
+
+.view-product {
+  padding: 5px 10px;
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+}
+
 /* start here */
 
 body {
@@ -76,6 +92,29 @@ header {
   color: #fff;
   display: flex;
   flex-direction: column;
+}
+
+.checkout-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid #000;
+  width: 318px;
+  height: 64px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: transparent;
+  margin: 0 141px 0;
+}
+
+.checkout-detail {
+  padding: 87px 37px 86px 38px;
 }
 
 .cart-icon {
@@ -191,6 +230,18 @@ header {
 
 .mb {
   margin-bottom: 66px;
+}
+
+.my {
+  margin-bottom: 11px;
+}
+
+.my-1 {
+  margin-bottom: 25px;
+}
+
+.my-2 {
+  margin-bottom: 39px;
 }
 
 .mb-0 {
@@ -339,6 +390,27 @@ main {
   line-height: normal;
 }
 
+.text-sm-400 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text-x-1 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.color-link {
+  color: var(--links-color);
+}
+
 .md-text {
   color: var(--text-color);
   font-family: "Poppins";
@@ -355,6 +427,15 @@ h4 {
   font-size: 32px;
   line-height: 48px;
   color: var(--text-color);
+}
+
+.color-pattern-text {
+  color: #b88e2f;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .lg-text {
@@ -1010,6 +1091,17 @@ select > option {
   border-radius: 10px;
 }
 
+.cloud-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6e6e6;
+  border-radius: 10px;
+  width: 612px;
+  height: 360.469px;
+  flex-shrink: 0;
+}
+
 .bg-img {
   padding: 52px 0;
 }
@@ -1077,12 +1169,12 @@ h4 {
 
 #show p {
   display: flex;
-  width: 1026px;
+  padding: 0 250px;
   height: 163px;
   flex-direction: column;
   flex-shrink: 0;
   color: #9f9f9f;
-  text-align: center;
+  text-align: justify;
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
@@ -1090,6 +1182,52 @@ h4 {
   line-height: normal;
   margin-bottom: 45px;
 }
+
+/* checkout style start here  */
+
+.wrap-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* checkout style ends here */
+
+/* overlay style start here */
+
+/* styles.css */
+#loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #34db93;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* overlay style end here */
 
 .tire-display {
   display: flex;

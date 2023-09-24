@@ -54,28 +54,28 @@
       </p>
     </div>
 
-    <section class="checkout-ml">
+    <section class="checkout-ml flex-flex">
       <form action="Get" class="form-control">
         <h3>Billing details</h3>
 
         <div class="wrap-checkout">
           <p>
-            <label for="firt_name">First Name</label>
+            <label for="firt_name" class="mb-0">First Name</label>
             <input type="text" name="" class="first-name" required />
           </p>
           <p>
-            <label for="Last_name">Last Name</label>
+            <label for="Last_name" class="mb-0">Last Name</label>
             <input type="text" name="" class="first-name" required />
           </p>
         </div>
 
         <p>
-          <label for="">Company Name (Optional)</label>
+          <label for="Company" class="mb-0">Company Name (Optional)</label>
           <input type="text" name="" class="input-checkout" />
         </p>
 
         <p>
-          <label for="country">Country / Region</label>
+          <label for="country" class="mb-0">Country / Region</label>
           <select name="" id="">
             <option value=""></option>
             <option value="Nigeria">Nigeria</option>
@@ -87,17 +87,17 @@
         </p>
 
         <p>
-          <label for="addrss">Street address</label>
+          <label for="addrss" class="mb-0">Street address</label>
           <input type="text" name="address" class="input-checkout" />
         </p>
 
         <p>
-          <label for="city">Town / City</label>
+          <label for="city" class="mb-0">Town / City</label>
           <input type="text" name="city" class="input-checkout" />
         </p>
 
         <p>
-          <label for="province">Province</label>
+          <label for="province" class="mb-0">Province</label>
           <select name="" id="">
             <option value=""></option>
             <option value="Nigeria">Nigeria</option>
@@ -109,18 +109,28 @@
         </p>
 
         <p>
-          <label for="number">ZIP code</label>
+          <label for="number" class="mb-0">ZIP code</label>
           <input type="number" name="number" class="input-checkout" />
         </p>
 
         <p>
-          <label for="phone">Phone</label>
-          <input type="tel" name="phone" class="input-checkout" />
+          <label for="phone" class="mb-0">Phone</label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="+234"
+            class="input-checkout"
+          />
         </p>
 
         <p>
-          <label for="email">Email address</label>
-          <input type="email" name="email" class="input-checkout" />
+          <label for="email" class="mb-0">Email address</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="email@g.mail.com"
+            class="input-checkout"
+          />
         </p>
 
         <input
@@ -132,56 +142,60 @@
       </form>
 
       <div class="checkout-detail">
-        <div class="wrap-wrap">
-          <p>Product</p>
-          <p>Subtotal</p>
-        </div>
+        <div>
+          <div class="wrap-wrap mb-8">
+            <p class="ml-text">Product</p>
+            <p class="ml-text">Subtotal</p>
+          </div>
 
-        <div class="wrap-wrap">
-          <p>MIRAGE MR-AT172 285/65</p>
-          <p>Rs. 50,000.00</p>
-        </div>
+          <div class="wrap-wrap mb-0">
+            <p class="text-sm-400 link-color">
+              MIRAGE MR-AT172 285/65 <span class="text-x-1">X</span>
+              <span class="text-x-1">1</span>
+            </p>
+            <p class="sm-text-16">Rs. 50,000.00</p>
+          </div>
 
-        <div class="wrap-wrap">
-          <p>Subtotal</p>
-          <p>Rs. 50,000.00</p>
-        </div>
+          <div class="wrap-wrap mb-0">
+            <p class="sm-text-16">Subtotal</p>
+            <p class="sm-text-16">Rs. 50,000.00</p>
+          </div>
 
-        <div class="wrap-wrap">
-          <p>Total</p>
-          <p>Rs. 50,000.00</p>
+          <div class="wrap-wrap margin-bottom">
+            <p class="sm-text-16">Total</p>
+            <p class="color-pattern-text">Rs. 50,000.00</p>
+          </div>
         </div>
-
         <div class="bottom-line"></div>
 
-        <p class="">
-          <input type="radio" name="" id="" />
+        <p class="flex gap margin-top my">
+          <input type="radio" name="chose" id="" />
           <label for="">Direct Bank Transfer</label>
         </p>
 
-        <p>
+        <p class="my-1 link-color">
           Make your payment directly into our bank account. Please use your
           Order ID as the payment reference. Your order will not be shipped
           until the funds have cleared in our account.
         </p>
 
-        <p class="">
-          <input type="radio" name="" id="" />
+        <p class="flex gap my link-color">
+          <input type="radio" name="chose" id="" />
           <label for="">Direct Bank Transfer</label>
         </p>
 
-        <p class="">
-          <input type="radio" name="" id="" />
-          <label for="">Direct Bank Transfer</label>
+        <p class="flex gap mb-0 link-color">
+          <input type="radio" name="chose" id="" />
+          <label for="">Cash On Delivery</label>
         </p>
 
-        <p>
+        <p class="my-2">
           Your personal data will be used to support your experience throughout
           this website, to manage access to your account, and for other purposes
-          described in our privacy policy.
+          described in our <span class="bold">privacy policy.</span>
         </p>
 
-        <button>Place Order</button>
+        <button class="checkout-btn">Place Order</button>
       </div>
     </section>
   </body>

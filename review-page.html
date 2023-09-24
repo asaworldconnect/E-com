@@ -133,8 +133,10 @@
 
           <div class="pluse flex">
             <div class="add">
-              <i onclick="decrement(${id})" class="bi bi-dash icon2"></i>
-              <span>1</span>
+              <i onclick="decrement(${id})" class="bi bi-dash icon1"></i>
+               <div id=${id} class="quantity">
+              1
+              </div>
               <i onclick="increment(${id})" class="bi bi-plus icon2"></i>
             </div>
 
@@ -166,9 +168,9 @@
               <p>Share</p>
               <span class="value">:</span>
               <div class="icons">
-                <img src="./Images/facebook-1.png" alt="" />
-                <img src="./Images/lind.png" alt="" />
-                <img src="./Images/twit.png" alt="" />
+               <a href="https://www.facebook.com/"> <img src="./Images/facebook-1.png" alt="" /></a>
+               <a href="https://www.linkedin.com/login"> <img src="./Images/lind.png" alt="" /></a>
+              <a href="https://twitter.com/?lang=en">  <img src="./Images/twit.png" alt="" /></a>
               </div>
             </div>
            
@@ -197,67 +199,74 @@
         </p>
 
         <div class="tire-display">
-          <div class="bg">
-            <a href="#"><img src="./Images/big.png" alt="tire" /></a>
+          <div class="cloud-bg">
+            <img src="./Images/Cloud sofa three seater + ottoman_2 1.png" alt="tire" />
           </div>
-          <div class="bg">
-            <img src="./Images/big.png" alt="tire" />
+          <div class="cloud-bg">
+            <img src="./Images/Cloud sofa three seater + ottoman_1 1.png" alt="tire" />
           </div>
         </div>
       </section>
 
       <div class="bottom-line-1"></div>
 
-      <footer class="section-ml">
-        <div class="footer-wrap">
-          <div class="loogo">
-            <img src="./Images/logo.png" alt="logo" />
+      <footer>
+      <div class="footer-wrap">
+        <div class="loogo">
+          <img src="./Images/logo.png" alt="logo" />
+        </div>
+
+        <div class="links-detail">
+          <div class="homeBtn">
+            <ul>
+              <li class="mb-2 link-color">Links</li>
+              <li class="mb-2"><a href="">Home</a></li>
+              <li class="mb-2"><a href="index.html">Shop</a></li>
+
+              <li class="mb-2"><a href="about.html">About</a></li>
+              <li class="mb-2 link-1">
+                <a class="link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="detail">
+            <ul>
+              <li class="mb-2 link-color"><a href="help.html">Help</a></li>
+              <li class="mb-2"><a href="checkout.html">Payment Options</a></li>
+              <li class="mb-2"><a href="#">Returns</a></li>
+              <li class="mb-2"><a href="#">Privacy Policies</a></li>
+            </ul>
           </div>
 
-          <div class="links-detail">
-            <div class="homeBtn">
-              <ul>
-                <li class="mb-2 link-color">Links</li>
-                <li class="mb-2"><a href="#">Home</a></li>
-                <li class="mb-2"><a href="index.html">Shop</a></li>
-
-                <li class="mb-2"><a href="about.html">About</a></li>
-                <li class="mb-2 link-1">
-                  <a class="link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <div class="detail">
-              <ul>
-                <li class="mb-2 link-color">Help</li>
-                <li class="mb-2">Payment Options</li>
-                <li class="mb-2">Returns</li>
-                <li class="mb-2">Privacy Policies</li>
-              </ul>
-            </div>
-
-            <div>
-              <label for="" class="mb-2 link-color">Newsletter</label>
-              <br />
-              <div class="align-1">
-                <input
-                  type="email"
-                  name="email"
-                  value=""
-                  placeholder="Enter Your Email Address"
-                />
-                <p class="link-1">
-                  <a class="link" href="#">Subscribe</a>
-                </p>
-              </div>
+          <div>
+            <label for="" class="mb-2 link-color"
+              ><a href="#">Newsletter</a></label
+            >
+            <br />
+            <div class="footer-input">
+              <input
+                class="input-footer-style"
+                type="email"
+                name="email"
+                value=""
+                placeholder="Enter Your Email Address"
+              />
+              <p class="link-1">
+                <a class="link" href="">Subscribe</a>
+              </p>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="bottom-line"></div>
-        <p class="center">2023-24 Asaworldconnect, All Rights reserved</p>
-      </footer>
+      <div class="bottom-line"></div>
+      <p class="center">&copy; 2023-24 Asaworldconnect, All Rights reserved</p>
+    </footer>
     </main>
+
+    <!-- <div id="loader-overlay">
+        <div class="loader"></div>
+    </div> -->
 
     <script src="./src/app.js"></script>
   </body>
